@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="icon" type="image/x-icon" href="./favicon-32x32.png" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab&family=Teko:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.whole{
+    
+}
+/* .photos3{
+    border: 2px solid #c21212 ;
+    box-shadow: 10px 15px rgb(229, 228, 228) ,20px 30px rgb(171, 5, 5);
+        transition: zoom 1s;
+    }
+
+.photos3:hover{
+    zoom: 20%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+} */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 900;
+}
+
+p {
+    color: #555;
+
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 2px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #fae206;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+.header {
+    /* background: radial-gradient(#ca7676, #ed0707); */
+    background-color: #08AEEA;
+background-image: linear-gradient(0deg, #08AEEA 0%, #f1d419 100%);
+
+
+}
+
+.header .row {
+    padding-bottom: 250px;
+    margin-bottom: 60px;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.checked {
+    color: orange;
+}
+
+.logo img {
+    margin-right: 8px;
+    border-radius: 100px;
+    /* margin-left: 3px; */
+}
+
+.rightimg {
+    margin-bottom: 2px;
+}
+
+.leftimg {
+    border-radius: 50px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after {
+    content: "";
+    background: #fafd33;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p {
+
+    font-size: 14px;
+}
+
+.rating.fa {
+    color: #fecf35;
+}
+
+.col-4:hover {
+    transform: translateY(-10px)
+}
+#frontpagedistrictpics img{
+    border: 5px solid rgb(62, 22, 143);
+}
+#frontpagedistrictpics h4{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+
+
+
+.offer {
+    background: radial-gradient(#fff, #56b45e);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.offerprdct{
+    color: rgb(8, 118, 23);
+}
+.col-2 .offer-img {
+    padding: 50px;
+}
+#offerbtn{
+    background-color: #118505;
+    cursor: pointer;
+}
+#offerbtn:hover{
+    background-color: #2a6123;
+}
+small {
+    color: #555;
+}
+
+.testimonial {
+    padding-top: 100px;
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover {
+    transform: translateY(-20px);
+}
+
+.fa.fa-quote-left {
+    font-size: 34px;
+    color: #ffd632;
+}
+
+.col-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+.brands {
+    margin: 20px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
+}
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    /* width: 180px; */
+    margin-bottom: 20px;
+}
+
+.footer-col-4,
+.footer-col4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* ---------------media query for menu icon-------- */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgb(0, 0, 0);
+        opacity: 0.5;
+        width: 30%;
+        margin-top: 50px;
+        height: 400px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        border-radius: 10px;
+        cursor: text;
+        cursor: pointer;
+        text-align: right;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 30px;
+        /* margin: 50%; */
+        margin-top: 50px;
+        margin-bottom: 15px;
+        /* text-align: center; */
+    }
+
+    nav ul li a {
+        color: #fff;
+
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+/*-------------------all products page--------------*/
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #f9f034;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #eef829;
+    margin-left: 10px;
+    width : 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: #fed338;
+    color: #fff;
+    
+}
+/* single product details */
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ffc13b;
+}
+input:focus{
+    outline: none;
+}
+.single-product .fa{
+    color: #fbe034;
+    margin-left: 10px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+/* cart items */
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap:wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #fcd332;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ffeb3b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #fdec2d;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+
+
+
+.w3rcontainer{
+   border: 1px solid #cccfdb;
+   border-radius: 20%;
+} 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #fcbe14;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+/* --------------------------media for less than 600px--------- */
+@media only screen and (max-width: 600px){
+.row{
+    text-align: center;
+
+}
+.col-2, .col-3, .col-4{
+    flex-basis: 100%;
+}
+.single-product .row{
+    text-align: left;
+}
+.single-product .col-2{
+    padding: 20px 0;
+
+}
+.single-product h1{
+    font-size: 26px;
+    line-height: 32px;
+}
+.cart-info p{
+    display: none;
+}
+
+}
+      .wrapper {
+        display: flex;
+      }
+      .wrapper .static-txt {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 400;
+      }
+      .wrapper .dynamic-txts {
+        margin-left: 15px;
+        height: 90px;
+        line-height: 90px;
+        overflow: hidden;
+      }
+      .dynamic-txts li {
+        list-style: none;
+        color: #000000;
+        font-size: 60px;
+        font-weight: 900;
+        position: relative;
+        top: 0;
+        animation: slide 3s steps(15) infinite;
+      }
+      @keyframes slide {
+        100% {
+          top: -360px;
+        }
+      }
+      .dynamic-txts li span {
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px;
+      }
+      /* .dynamic-txts li span::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 80%;
+        width: 1.5%;
+        background: rgb(1, 0, 0); 
+      } */
+      /* border-left: 2px solid #000000;
+        animation: typing 0s steps(5) infinite;
+      }
+      /* ==================================================================================================== */
+      @keyframes typing {
+        40%,
+        60% {
+          left: calc(100% + 30px);
+        }
+        100% {
+          left: 0;
+        }
+      }
+      .FRONTPARA {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: 600;
+      }
+
+      .dynamic-txts {
+        margin-left: 15px;
+        height: 90px;
+        line-height: 90px;
+        overflow: hidden;
+      }
+      */ .dynamic-txts li {
+        list-style: none;
+        color: #000000;
+        font-size: 60px;
+        font-weight: 900;
+        position: relative;
+        top: 0;
+        animation: slide 6s linear infinite; /* Change animation to linear */
+      }
+
+      @keyframes slide {
+        0% {
+          top: 0;
+        }
+        25% {
+          top: -90px; /* Adjust based on your text height */
+        }
+        50% {
+          top: -180px; /* Adjust based on your text height */
+        }
+        75% {
+          top: -270px; /* Adjust based on your text height */
+        }
+        100% {
+          top: -360px; /* Adjust based on your text height */
+        }
+      }
+
+      .dynamic-txts li span {
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px;
+      }
+      /* =========================================================== */
+
+/* CSS */
+
+#b1,
+#b1:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #ffaf01 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#b1:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #ffe101 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+#b1:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  #b1,
+  #b1:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+#b2,
+#b2:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #ffaf01 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#b2:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #fffb01 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+#b2:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  #b2,
+  #b2:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+#b3,
+#b3:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #ffc801 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#b3:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #fff201 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+#b3:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  #b3,
+  #b3:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="./index.html"
+              ><img class="leftimg" src="unnamed.png" width="100px"
+            /></a>
+            <!-- <img
+              class="rightimg"
+              src="./logoodp.jpg"
+              width="400px"
+              height="90px"
+            /> -->
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li class="hover-underline-animation">
+                <a href="./productbuy.html">APPOINTMENT</a>  
+              </li>
+              <li class="hover-underline-animation">
+                <a href="./products.html">SERVICES</a>
+              </li>
+              <li class="hover-underline-animation"><a href="./active-menu-parallax-responsive-films-landing-page/active-menu-parallax-responsive-films-landing-page/dist/index.html">ABOUT</a></li>
+              <li class="hover-underline-animation"><a href="./dist contact/index.html">CONTACT</a></li>
+              <li class="hover-underline-animation">
+                <a href="./account.html">ACCOUNT</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="./cart.html"
+            ><img src="./cart.png" width="30px" height="30px"
+          /></a>
+          <img src="./menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1 id="textH1">
+              <div class="wrapper">
+                <ul>
+                <!--<div class="static-txt">I'm a</div> -->
+                <!-- <ul class="dynamic-txts"> -->
+                  <li><span>Welcome</span></li>
+                  
+                </ul>
+              </div>
+              to Salon Management System
+            </h1>
+            <p class="FRONTPARA">
+              We'll STYLE WHILE YOU SMILE!
+              <br />BEAUTY IS OUR DUTY.
+            </p>
+            <!-- <a href="./explorefolder/explorepage.html" class="btn"
+              >Explore J&K &#8594;</a -->
+            <!-- > -->
+          </div>
+          <div class="col-2">
+            <img class="col2" src="C:\Users\saksh\OneDrive\Pictures\Screenshots\Screenshot 2024-03-14 191633.png" />
+            <img class="col2" src="C:\Users\saksh\OneDrive\Pictures\Screenshots\Screenshot 2024-03-14 191137.png" />
+            <!-- <img class="col2" src="./BU3.jpg" />
+            <img class="col2" src="./BU4.jpg" /> -->
+            <img class="col2" src="C:\Users\saksh\OneDrive\Pictures\Screenshots\Screenshot 2024-03-14 003122.png" />
+            <img class="col2" src="C:\Users\saksh\OneDrive\Pictures\Screenshots\Screenshot 2024-03-14 192445.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="whole">
+      <!-- ------------featured catagories-------- -->
+
+      <!-- <div class="categories">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-3">
+              <img
+                src="./WhatsApp Image 2023-09-21 at 21.12.40.jpg"
+                class="photos3"
+              />
+            </div>
+            <div class="col-3">
+              <img src="./jammukashmir2jpg.jpg" class="photos3" />
+            </div>
+            <div class="col-3">
+              <img src="./jammukashmir4jpg.jpg" class="photos3" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- ------------featured catagories-------- -->
+      <!-- <div class="small-container" id="frontpagedistrictpics">
+        <h2 class="title">DISTRICTS</h2>
+        <div class="row">
+          <div class="col-4">
+            <a href="./kathua.html"
+              ><img src="./kathua district/kathua2.jpg"
+            /></a>
+            <h4>Kathua District</h4>
+            <div class="Rating"> -->
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span> -->
+            <!-- </div> -->
+            <!-- <p>$50.00</p> -->
+          <!-- </div>
+          <div class="col-4">
+            <a href="./anantnag.html"
+              ><img src="./anantnag_district/anantnag2.jpg"
+            /></a>
+            <h4>AnantNag District</h4>
+            <div class="Rating"> -->
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span> -->
+            <!-- </div> -->
+            <!-- <p>$50.00</p> -->
+          <!-- </div>
+          <div class="col-4">
+            <a href="./budgam.html">
+              <img src="./budgam_updated/budgam1.jpg"
+            /></a>
+            <h4>Budgam District</h4>
+            <div class="Rating"> -->
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span> -->
+            <!-- </div> -->
+            <!-- <p>$50.00</p> -->
+          <!-- </div>
+          <div class="col-4">
+            <a href="./jammu.html"><img src="./jammu updates/jammu2.png" /></a>
+            <h4>Jammu District</h4>
+            <div class="Rating"> -->
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <i class="fa fa-star-half-full" style="color: orange"></i>
+            <span class="fa fa-star"></span> -->
+              <!-- <span class="fa fa-star"></span> -->
+            <!-- </div> -->
+            <!-- <p>$50.00</p> -->
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- <h2 class="title">Featured Products</h2> -->
+        <!-- <div class="row">
+          <div class="col-4">
+            <a href="./rajouri.html"
+              ><img src="./Rajouri/A-sweeping-view-of-Kashmir-Valle.jpg"
+            /></a>
+            <h4>Rajouri District</h4>
+            <div class="Rating"> -->
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span> -->
+            <!-- </div> -->
+            <!-- <p>$50.00</p> -->
+          <!-- </div>
+          <div class="col-4">
+            <a href="./srinagar.html"> <img src="./srinagar/OIP (8).jpg" /></a>
+            <h4>Srinagar District</h4>
+            <div class="Rating"> -->
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span> -->
+            <!-- </div> -->
+            <!-- <p>$50.00</p> -->
+          <!-- </div> -->
+          <!-- <div class="col-4">
+            <a href="./shopian.html"><img src="./shopian/shopian-pic.jpg" /></a>
+            <h4>Shopian District</h4>
+            <div class="Rating"> -->
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span> -->
+            <!-- </div> -->
+            <!-- <p>$50.00</p> -->
+          <!-- </div>
+          <div class="col-4">
+            <a href="./baramulla.html"
+              ><img src="./BaraMulla/baramulla1.jpg"
+            /></a>
+            <h4>BaraMulla District</h4>
+            <div class="Rating"> -->
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <i class="fa fa-star-half-full" style="color: orange"></i>
+            <span class="fa fa-star"></span> -->
+            </div>
+            <!-- <p>$50.00</p> -->
+          </div>
+        </div>
+      </div>
+      <!-- -----------------offer product--------- -->
+      <!-- <h2 class="title">Featured Products</h2> -->
+        <!-- <div class="offer">
+          <div class="small-container">
+            <div class="row">
+              <div class="col-2">
+                <img src="./modibanner.jpg" class="offer-img" />
+              </div>
+              <div class="col-2">
+                <h1 class="offerprdct">आइए मिलकर निर्माण करें</h1> -->
+
+              <!-- <a class="btn" id="offerbtn" hr ef="">Buy Now &#8594;</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------testinomial----------------------->
+
+      <div class="brands">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-5">
+              <!-- <img src="./govt1.jpg" /> -->
+              <a href="./productbuy.html"><button id="b1">APPONITMENT </button></a>
+            </div>
+            <div class="col-5">
+              <!-- <img src="./govt6.jpg" height="160px" /> -->
+             <button id="b2">SELL</button>
+            </div>
+            <div class="col-5">
+              <!-- <img src="./govt9.jpg" height="160px" /> -->
+            <a href="./products.html"><button id="b3">RENT</button></a>
+            </div>
+            <!-- <div class="col-5">
+              <img src="./govt7.png" />
+            </div>
+            <div class="col-5">
+              <img src="./govt4.jpg" />
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------footer---------------- -->
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            
+            <!-- <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                <img src="./play-store.png" />
+                <img src="./app-store.png" />
+              </div>
+            </div>
+           
+            <div class="footer-col-3">
+              <h3>Uswefull Links</h3>
+              <ul>
+                <li>Coupuns</li>
+                <li>Blog Post</li>
+                <li>Return policy</li>
+                <li>Join a</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>facebook</li>
+                <li>InstaGram</li>
+                <li>Youtube</li>
+                <li>Twitter</li>
+              </ul>
+            </div>
+          </div>
+          <hr /> -->
+          <p class="copyright">ALL RIGHTS RESERVED <br>@Copyright 2023</p>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------js for menu toggle---------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "600px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script>
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("col2");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+          slideIndex = 1;
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
